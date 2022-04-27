@@ -7,7 +7,7 @@
 
 -Search web app for Items_name
 
--Extract data for a single Item (Descriptio,Price)
+-Extract data for a single Item (Description,Price)
 
 -Save the first 10 Item_DEscription, Item_Price to excel
 
