@@ -1,0 +1,219 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="search_10_item_ebay_from_input" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="540,2335.2" sap2010:WorkflowViewState.IdRef="search_10_item_ebay_from_input_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="search_10_item_ebay_from_input" sap:VirtualizedContainerService.HintSize="550.4,2270.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Default="C:\Users\Ardit Shalla\Desktop\excel tables\new_items.xlsx" Name="strExcelPath" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DataTable]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="508.8,88" sap2010:WorkflowViewState.IdRef="ReadRange_5" SheetName="Foglio1" WorkbookPath="C:\Users\Ardit Shalla\Desktop\excel tables\new_items.xlsx" />
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: eBay | Tecnologia, moda, fai da te: prodotti nuovi a prezzo fisso" sap:VirtualizedContainerService.HintSize="508.8,644" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cbbcb4f4-639e-408d-91ad-85046f1c9f34" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,427.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="excelInput" />
+              <Variable x:TypeArguments="x:String" Default="Pendrive" Name="strInput" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="click search on ebay" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cbbcb4f4-639e-408d-91ad-85046f1c9f34" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.ebay.it/" DesignTimeRectangle="456, 198, 774, 48" ElementType="InputBox" FriendlyName="'INPUT gh-ac'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Inserisci la parola chiave di ricerca' /&gt;" Guid="ef36a84f-91b7-41af-ab6f-0043a39b4a49" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAwoAAAA0CAYAAAAqoM9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKuSURBVHhe7d2/jkxxHMbhuYXptjMVldVQ+dNsRShoSCi2oSChoCHZgmoTEiqFRCmRaCWiFtELF4AbsFfwk3cyE2u/xJ7NnDlTPE/yZrNnR++T3zlzRg0AAGCP0Xht0szMzMzMzHZPKJiZmZmZWZlbjwAAgEIoAAAAhVAAAAAKoQAAABRCAQAAKIQCAABQCAUAAKAQCgAAQCEUAACAQigAAACFUAAAAAqhAAAAFEIBAAAohAIAAFAIBQAAoFhqKLx6/aZd27zRJkfW23htMv2Z39++ez/7BAAAsAqWEgqfv3xtZzbOTePg/MXL7f7Ww7b9+Gm7eftuO71xdnr9wqUr7efOzuxfAAAAQ+o9FBIJOTk4dPho+/Dx0+zqn56/eDn9e2JCLAAAwPB6D4WcGKwfP/nfAEhQJBZysgAAAAyr11DIMwm5rehfJwl75WShy+cBAIB+9BoKVzevT59J6CKnCnl2AQAAGE6voZD/9OfB5S4SFl3jAgAAWKxeQyG3EeXbjbpIWOS5BgAAYDi9nyh0DQUnCgAAMLzen1HIV552cZC4AAAAFqvXUMgblw/yrUffvv+YXQEAAIbQayhEbiPKC9f28x6FfK7rw88AAMDi9R4KCYS8cC0RkBOGv8lJQv6e04Rbd+7NrgIAAEPpPRQisZCThYTAsROn2oOtR237ybNpFOT3XM/zDPNbj8QCAAAMaymhMJdnFfIytURDThnyM7ca7X6GYf42Z7EAAADDWWoo7JdYAACAYa1kKMQ8FjzcDAAAy7eyoRCJBW9pBgCA5VvpUAAAAIYhFAAAgEIoAAAAhVAAAAAKoQAAABRCAQAAKIQCAABQCAUAAKAQCgAAQCEUAACAQigAAACFUAAAAAqhAAAAFEIBAAAohAIAAFCMxmuTZmZmZmZm9nuT9gvngWgtjIdoqQAAAABJRU5ErkJggg==" InformativeScreenshot="59e6e05c28a0fc4852ef53b5d76b5e45.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='9527ebay#{&amp;quot;parentId&amp;quot;:&amp;quot;dbfca179-7018-4601-8283-92ea470730de&amp;quot;,&amp;quot;screenId&amp;quot;:&amp;quot;8f9f110e-f530-4abe-9b86-43b597d85efa&amp;quot;}' title='eBay | Tecnologia, moda, fai da te: prodotti nuovi a prezzo fisso' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  gh-ac'" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[strInput+ &quot;[k(enter)]&quot;]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9aac8ef6-a74b-4ab0-a77f-cd894ce0868f" InformativeScreenshot="a732328b8da304d4ec6bb234c74413ab" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACiSURBVDhPY/j//z8GvnHjhlpQUNBaPj6+DyAMYoPEsKnFEAApFBMTe9HR0VH+7t07fhAGsUFi2AxB4YAwyDaQBnRxkBhIDl0chQPCICfv2LHDHV1827ZtHiA5dHEw8dTI4j8MM6RcQsFf1zOB8Zd1ELpthzgck2QADI8aMGoATgOee/g+JtWAyfsNHsMN+HHytDPMEGIMAGm+/+aQ4////xkADNiBBUd/4MwAAAAASUVORK5CYII=" InformativeScreenshot="9e524268f19de851ccdbd41882bbb106.png" Selector="&lt;html app='chrome.exe' htmlwindowname='9527ebay#{&amp;quot;parentId&amp;quot;:&amp;quot;dbfca179-7018-4601-8283-92ea470730de&amp;quot;,&amp;quot;screenId&amp;quot;:&amp;quot;8f9f110e-f530-4abe-9b86-43b597d85efa&amp;quot;}' title='eBay | Tecnologia, moda, fai da te: prodotti nuovi a prezzo fisso'/&gt;" Url="https://www.ebay.it/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="508.8,1365.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="b6e738a6-fbac-49c5-883f-6d52dfaa710c" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1148.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataItems" />
+              <Variable x:TypeArguments="sd:DataTable" Name="DataOutputItems" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataItems]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Description'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="10" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.ebay.it/sch/i.html?_from=R40&amp;_trksid=p2380057.m570.l1313&amp;_nkw=pendrive&amp;_sacat=0" DesignTimeRectangle="567, 906, 417, 72" FriendlyName="'PENDRIVE KINGSTON'" FullSelectorArgument="&lt;webctrl aaname='PENDRIVE KINGSTON 32 GB 64 GB 128 GB CHIAVETTA USB 3.2 GEN 1 MEM*' parentid='srp-river-results' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='PENDRIVE KINGSTON 32 GB 64 GB 128 GB CHIAVETTA USB 3.2 GEN 1 MEM*' parentid='srp-river-results' tag='H3' type='' check:text='PENDRIVE KINGSTON 32 GB 64 GB 128 GB CHIAVETTA USB 3.2 GEN 1 MEMORIA EXODIA DTX' /&gt;" Guid="7d7f48ba-55ca-40f7-98ce-70b135407697" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='9527ebay#{&amp;quot;parentId&amp;quot;:&amp;quot;13740471-7daf-4d3c-b037-8be52d18721d&amp;quot;,&amp;quot;screenId&amp;quot;:&amp;quot;aa4520b8-abba-4849-b704-826ba384fccd&amp;quot;}' title='pendrive in vendita - | eBay' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="317, 424, 675, 20509" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='srp-river-results' tag='UL' /&gt;" Guid="f55e7f57-3fa4-4e3a-a91c-7f1ef359b9c7" InformativeScreenshot="becf3e30ce0551bbb33767b0c82ce301.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='9527ebay#{&amp;quot;parentId&amp;quot;:&amp;quot;13740471-7daf-4d3c-b037-8be52d18721d&amp;quot;,&amp;quot;screenId&amp;quot;:&amp;quot;aa4520b8-abba-4849-b704-826ba384fccd&amp;quot;}' title='pendrive in vendita - | eBay' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NExtractData>
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DataOutputItems]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_4" SheetName="Foglio1" WorkbookPath="C:\Users\Ardit Shalla\Desktop\excel tables\new_items.xlsx" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataItems]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,728.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,611.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Description" />
+                      <Variable x:TypeArguments="x:String" Name="Price" />
+                      <Variable x:TypeArguments="x:String" Name="variable1" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Description]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Description").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Price]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Price").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;DESCRIPTION: &quot; + Description + &quot;PRICE :&quot; + Price]" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Description,Price}]" DataTable="[DataOutputItems]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACiSURBVDhPY/j//z8GvnHjhlpQUNBaPj6+DyAMYoPEsKnFEAApFBMTe9HR0VH+7t07fhAGsUFi2AxB4YAwyDaQBnRxkBhIDl0chQPCICfv2LHDHV1827ZtHiA5dHEw8dTI4j8MM6RcQsFf1zOB8Zd1ELpthzgck2QADI8aMGoATgOee/g+JtWAyfsNHsMN+HHytDPMEGIMAGm+/+aQ4////xkADNiBBUd/4MwAAAAASUVORK5CYII=" InformativeScreenshot="253ee431def4441e04b7d26f7867850f.png" Selector="&lt;html app='chrome.exe' htmlwindowname='9527ebay#{&amp;quot;parentId&amp;quot;:&amp;quot;13740471-7daf-4d3c-b037-8be52d18721d&amp;quot;,&amp;quot;screenId&amp;quot;:&amp;quot;aa4520b8-abba-4849-b704-826ba384fccd&amp;quot;}' title='pendrive in vendita - | eBay'/&gt;" Url="https://www.ebay.it/sch/i.html?_from=R40&amp;_trksid=p2380057.m570.l1313&amp;_nkw=pendrive&amp;_sacat=0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
